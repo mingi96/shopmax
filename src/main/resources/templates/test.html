@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<form method="post" action="/test">
+		<label for="id"> 아이디</label>
+		<input type="text" name="id">
+		<label for="password"> 비밀번호</label>
+		<input type="password" name="password">
+		<button type="submit">전송</button>
+		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+	</form>
+</body>
+
+</html>
